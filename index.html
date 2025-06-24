@@ -10,8 +10,8 @@
             padding: 0;
         }
         body{
-            background-image: url(bread.jpg);
-            font-family: 'Courier New', Courier, monospace;
+            background-image: url(Backg.jpg);
+            font-family: 'Times New Roman', Times, serif;
             color:white;
         }
         .container{
@@ -20,15 +20,72 @@
             align-items: center;
             
         }
-        nav {
-        position: fixed;
-        top:0;
-        height: 100vh; 
-        width: 250px;
-        background-color: rgba(0,0,0,0.7);
-        padding: 20px;
-        }
 
+        
+        nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 230px;
+    padding: 0;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    z-index: 2000;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 60px;
+    }
+    
+    #menu-toggle {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        background: transparent;
+        color: white;
+        font-size: 50px;
+        border: none;
+        padding: 10px 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .menu {
+        list-style-type: none;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #collapsed {
+        position: fixed;
+        height: 100vh;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-top: 60px;
+        transition: transform 0.5s ease;
+        transform: translateX(0);
+        z-index: 999;
+    }
+    
+    #collapsed.menu {
+        transform: translateX(-100%);
+    }
+    
+    .navbar a {
+        display: flex;
+        text-decoration: none;
+        align-items: flex-start;
+        color: white;
+        font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        padding: 20px;
+      
+    }
        .content {
         margin-left: 30px; 
         padding: 20px;
@@ -73,9 +130,10 @@
     </head>
 <body>
 <div class="container">
-        <div class="logo"><img src="bake.jpg" alt="" width="50vh"></div>
+        <div class="logo"><img src="bake.jpg" alt="Company logo" width="50vh"></div>
         <nav id="navbar">
-        <ul>
+        <button id="menu-toggle">=</button>    
+        <ul class="menu" id="collapsed">
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="menu.html">Menu</a></li>
