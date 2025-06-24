@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(bread.jpg);
+            font-family: 'Courier New', Courier, monospace;
+            color:white;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        nav {
+        position: fixed;
+        top:0;
+        height: 100vh; 
+        width: 250px;
+        background-color: rgba(0,0,0,0.7);
+        padding: 20px;
+        }
+
+       .content {
+        margin-left: 30px; 
+        padding: 20px;
+        }
+       
+        ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li{
+            position: relative;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            display: block;
+            padding: 10px;
+        }
+        .content{
+            margin-left: 300px;
+        }
+        p{
+            font-size: 20px;
+        }
+        button{
+            background-color:orange;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-top: 30px;
+        }
+        a:hover{
+            color: blue;
+        }
+        h1{
+            font-size: 50px;
+        }
+
+
+    </style>
+    </head>
+<body>
+<div class="container">
+        <div class="logo"><img src="bake.jpg" alt="" width="50vh"></div>
+        <nav id="navbar">
+        <ul>
+            <li><a href="Homes.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="orderonline.html">Order online</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="catering.html">Catering and Events</a></li>
+            <li><a href="season.html">Seasonal specials</a></li>
+            <li><a href="customer.html">Customer Reviews</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">Faqs</a></li>  
+        </ul> 
+        </nav>
+    <div class="content">
+        <p>#THEBESTBAKERY</p>
+        <h1>We Bake With Passion</h1>
+        <p>Sweet Crumbs Bakery Freshly baked treats made with love. From breads to cupcakes, we bring you sweet moments in every bite.</p>
+        <button>read more</button>
+    </div>
+</div>
+
+</body>
+</html>
