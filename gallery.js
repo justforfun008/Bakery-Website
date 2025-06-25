@@ -1,17 +1,17 @@
 const imageSources = [
-   "images/Drip cake.jpg",
-   "images/Oreo drip cake.jpg",
-   "images/goat cake.jpg",
-   "images/Pink cat cake.jpg"
+   "Drip cake.jpg",
+   "Oreo drip cake.jpg",
+   "goat cake.jpg",
+   "Pink cat cake.jpg"
 ];
 
 const cupcakeSources = [
-  "images/chocolate cupcake.jpg",
-   "images/vanilla cupcake 2.jpg",
-   "images/vanilla cupcake.jpg",
-   "images/cherrycc.jpeg",
-   "images/chococc.jpg",
-   "images/cupcake.jpeg"
+  "chocolate cupcake.jpg",
+   "vanilla cupcake 2.jpg",
+   "vanilla cupcake.jpg",
+   "cherrycc.jpeg",
+   "chococc.jpg",
+   "cupcake.jpeg"
 ];
 
 let currentIndex = null;
