@@ -76,7 +76,11 @@ nav {
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     font-size: 14px;
     padding: 20px;
-  
+}
+
+.logo{
+    width: 50vh;
+    transform: translate(50px, -150px);
 }
 
 h1 {
